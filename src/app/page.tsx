@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { Sparkles, Award, Shield, Clock, ChevronRight, Star } from "lucide-react";
+import { RiSparklingLine as Sparkles, RiAwardLine as Award, RiShieldLine as Shield, RiTimeLine as Clock, RiArrowRightLine as ChevronRight, RiStarFill as Star } from "react-icons/ri";
 
 export default function Home() {
   const collections = [
@@ -82,7 +82,7 @@ export default function Home() {
             className="object-cover opacity-40"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-luxury-black/60 via-luxury-black/40 to-luxury-black" />
+          <div className="absolute inset-0 bg-linear-to-b from-luxury-black/60 via-luxury-black/40 to-luxury-black" />
         </div>
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
@@ -104,7 +104,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Discover Karachi's finest collection of gold and diamond jewellery,
+            Discover our finest collection of gold and diamond jewellery,
             crafted with precision and passion since generations.
           </motion.p>
 
@@ -177,7 +177,7 @@ export default function Home() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-linear-to-t from-luxury-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     <p className="text-white/90 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       {collection.description}
@@ -194,7 +194,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-gray-50 to-white">
         <div className="container mx-auto max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -278,7 +278,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gold/90 to-gold">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-r from-gold/90 to-gold">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -290,7 +290,7 @@ export default function Home() {
               Ready to Find Your Perfect Piece?
             </h2>
             <p className="text-lg text-luxury-black/80 mb-8 max-w-2xl mx-auto">
-              Visit our showroom in Karachi or get in touch with our experts to
+              Visit our showroom or get in touch with our experts to
               create your dream jewellery.
             </p>
             <Link

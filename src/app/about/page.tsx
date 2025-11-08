@@ -2,14 +2,14 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Users, Award, Heart, Sparkles, TrendingUp, Shield } from "lucide-react";
+import { RiGroupLine as Users, RiAwardLine as Award, RiHeartLine as Heart, RiSparklingLine as Sparkles, RiBarChartLine as TrendingUp, RiShieldLine as Shield } from "react-icons/ri";
 
 export default function AboutPage() {
   const timeline = [
     {
       year: "1950s",
       title: "The Beginning",
-      description: "Founded by our grandfather, starting as a small jewellery workshop in the heart of Karachi.",
+      description: "Founded by our grandfather, starting as a small jewellery workshop in the heart of the city.",
     },
     {
       year: "1980s",
@@ -24,7 +24,7 @@ export default function AboutPage() {
     {
       year: "Today",
       title: "Legacy Continues",
-      description: "Three generations strong, serving thousands of satisfied customers across Pakistan.",
+      description: "Three generations strong, serving thousands of satisfied customers in our community.",
     },
   ];
 
@@ -70,7 +70,7 @@ export default function AboutPage() {
             className="object-cover opacity-30"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-luxury-black/60 to-luxury-black" />
+          <div className="absolute inset-0 bg-linear-to-b from-luxury-black/60 to-luxury-black" />
         </div>
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
@@ -105,10 +105,10 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Ahsan & Sons Jewellers was founded in the 1950s by our grandfather,
+                  Jewellers Shop was founded in the 1950s by our grandfather,
                   who had a vision to bring exquisite gold and diamond jewellery to
-                  the people of Karachi. What started as a small workshop has grown
-                  into one of the city's most trusted jewellery houses.
+                  the people of our community. What started as a small workshop has grown
+                  into one of the most trusted jewellery shops in the area.
                 </p>
                 <p>
                   For over seven decades, we have been committed to excellence,
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/50 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-luxury-black/50 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="text-white text-lg font-semibold">Our Craftsmanship Workshop</p>
               </div>
@@ -148,7 +148,7 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-gray-50 to-white">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -175,12 +175,12 @@ export default function AboutPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="flex flex-col md:flex-row gap-6 items-start md:items-center"
               >
-                <div className="flex-shrink-0 w-32">
+                <div className="shrink-0 w-32">
                   <span className="text-3xl font-bold text-gold font-decorative">
                     {item.year}
                   </span>
                 </div>
-                <div className="flex-shrink-0 hidden md:block">
+                <div className="shrink-0 hidden md:block">
                   <div className="w-4 h-4 rounded-full bg-gold" />
                 </div>
                 <div className="flex-1 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
@@ -260,7 +260,7 @@ export default function AboutPage() {
       </section>
 
       {/* Showroom Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-gray-50 to-white">
         <div className="container mx-auto max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -273,7 +273,7 @@ export default function AboutPage() {
               Visit Our <span className="text-gold">Showroom</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Experience luxury in person at our Karachi showroom
+              Experience luxury in person at our showroom
             </p>
           </motion.div>
 
@@ -291,7 +291,7 @@ export default function AboutPage() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/60 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-luxury-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="text-white text-xl font-semibold">Our Elegant Showroom</p>
               </div>
@@ -303,7 +303,7 @@ export default function AboutPage() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/60 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-luxury-black/60 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="text-white text-xl font-semibold">Curated Collections</p>
               </div>
@@ -326,7 +326,7 @@ export default function AboutPage() {
               Become Part of Our Story
             </h2>
             <p className="text-lg text-luxury-black/80 mb-8 max-w-2xl mx-auto">
-              We invite you to experience the legacy of Ahsan & Sons Jewellers.
+              We invite you to experience the legacy of Jewellers Shop.
               Visit us today and let us help you find or create the perfect piece.
             </p>
             <a

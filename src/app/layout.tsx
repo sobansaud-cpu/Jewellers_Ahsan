@@ -7,8 +7,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Ahsan & Sons Jewellers - Luxury Gold & Diamond Jewellery in Karachi",
-  description: "Discover exquisite gold and diamond jewellery at Ahsan & Sons, one of Karachi's finest jewellery houses. Timeless elegance crafted with precision.",
+  title: "Jewellers Shop - Luxury Gold & Diamond Jewellery",
+  description: "Discover exquisite gold and diamond jewellery at Jewellers Shop. Timeless elegance crafted with precision.",
 };
 
 export default function RootLayout({

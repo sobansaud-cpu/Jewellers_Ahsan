@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
+import { RiMapPinLine as MapPin, RiPhoneLine as Phone, RiMailLine as Mail, RiTimeLine as Clock, RiSendPlaneLine as Send, RiMessage3Line as MessageCircle } from "react-icons/ri";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -31,22 +31,22 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["Shop # 57 & 58, Hyderi Centre", "Block G, North Nazimabad, Karachi"],
+      details: ["123 Main Street", "Downtown City, State 12345"],
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+92 321 2034077", "(92-21) 36628846"],
+      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["har916@hotmail.com"],
+      details: ["info@jewellersshop.com"],
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Mon - Sat: 10 AM - 8 PM", "Sunday: 11 AM - 6 PM"],
+      details: ["Mon - Sat: 9 AM - 7 PM", "Sunday: 10 AM - 5 PM"],
     },
   ];
 
@@ -82,7 +82,7 @@ export default function ContactPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
+                className="bg-linear-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
               >
                 <div className="inline-flex items-center justify-center w-14 h-14 bg-gold/10 rounded-full mb-4">
                   <info.icon className="w-7 h-7 text-gold" />
@@ -102,7 +102,7 @@ export default function ContactPage() {
       </section>
 
       {/* Business Card Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-white to-gray-50">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -128,8 +128,8 @@ export default function ContactPage() {
           >
             <div className="relative w-full aspect-[1.75/1] rounded-xl overflow-hidden shadow-2xl border-4 border-gold/30 hover:border-gold/50 transition-all duration-300 hover:shadow-gold/20">
               <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/sonsajw-1762340504656.jpg?width=8000&height=8000&resize=contain"
-                alt="Ahsan & Sons Jewellers Business Card"
+                src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=800&h=600&fit=crop"
+                alt="Jewellers Shop Business Card"
                 fill
                 className="object-cover"
                 priority
@@ -140,7 +140,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Map Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-gray-50 to-white">
         <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -200,7 +200,7 @@ export default function ContactPage() {
                     type="tel"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+92 321 2034077"
+                    placeholder="+1 (555) 123-4567"
                     className="w-full"
                   />
                 </div>
@@ -241,7 +241,7 @@ export default function ContactPage() {
             >
               <div className="bg-luxury-black rounded-lg overflow-hidden shadow-xl h-full">
                 <iframe
-                  src="https://maps.google.com/maps?q=24.936674212745,67.044044&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=40.7128,-74.0060&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -249,7 +249,7 @@ export default function ContactPage() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="w-full h-full"
-                  title="Ahsan & Sons Jewellers Location"
+                  title="Jewellers Shop Location"
                 />
               </div>
             </motion.div>
@@ -258,7 +258,7 @@ export default function ContactPage() {
       </section>
 
       {/* Additional Info Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gold/90 to-gold">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-r from-gold/90 to-gold">
         <div className="container mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -275,14 +275,14 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="tel:+923212034077"
+                href="tel:+15551234567"
                 className="inline-flex items-center gap-2 bg-luxury-black hover:bg-luxury-black/90 text-gold px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg"
               >
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
               <a
-                href="https://wa.me/923212034077"
+                href="https://wa.me/15551234567"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-luxury-black hover:bg-luxury-black/90 text-gold px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg"
@@ -298,7 +298,7 @@ export default function ContactPage() {
       {/* Floating Action Buttons */}
       <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
         <motion.a
-          href="https://wa.me/923212034077"
+          href="https://wa.me/15551234567"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ scale: 0 }}
@@ -316,7 +316,7 @@ export default function ContactPage() {
         </motion.a>
 
         <motion.a
-          href="tel:+923212034077"
+          href="tel:+15551234567"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 1.2, type: "spring", stiffness: 260, damping: 20 }}

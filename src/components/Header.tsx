@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Instagram, Facebook } from "lucide-react";
+import { RiMenuLine as Menu, RiCloseLine as X, RiPhoneLine as Phone, RiInstagramLine as Instagram, RiFacebookLine as Facebook } from "react-icons/ri";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,15 +25,9 @@ export default function Header() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="relative h-14 w-48"
+              className="text-2xl font-bold text-gold"
             >
-              <Image
-                src="/logoahsan.jpg"
-                alt="Ahsan & Sons Jewellers"
-                fill
-                className="object-contain"
-                priority
-              />
+              Jewellers
             </motion.div>
           </Link>
 
@@ -65,14 +59,14 @@ export default function Header() {
               className="hidden md:flex items-center space-x-3"
             >
               <a
-                href="tel:+923212034077"
+                href="tel:+15551234567"
                 className="text-white/80 hover:text-gold transition-colors"
                 aria-label="Phone"
               >
                 <Phone className="w-5 h-5" />
               </a>
               <a
-                href="https://www.instagram.com/ahsan_sons_jewellers/?hl=en"
+                href="https://www.instagram.com/jewellersshop"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/80 hover:text-gold transition-colors"
@@ -81,7 +75,7 @@ export default function Header() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://www.facebook.com/ahsanjewellers/"
+                href="https://www.facebook.com/jewellersshop"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/80 hover:text-gold transition-colors"
@@ -125,14 +119,14 @@ export default function Header() {
                 ))}
                 <div className="flex items-center space-x-4 pt-4 border-t border-gold/20">
                   <a
-                    href="tel:+923212034077"
+                    href="tel:+15551234567"
                     className="text-white/80 hover:text-gold transition-colors"
                     aria-label="Phone"
                   >
                     <Phone className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/ahsan_sons_jewellers/?hl=en"
+                    href="https://www.instagram.com/jewellersshop"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-gold transition-colors"
@@ -141,7 +135,7 @@ export default function Header() {
                     <Instagram className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://www.facebook.com/ahsanjewellers/"
+                    href="https://www.facebook.com/jewellersshop"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-gold transition-colors"

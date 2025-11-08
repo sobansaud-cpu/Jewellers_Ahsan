@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
+import { RiMapPinLine as MapPin, RiPhoneLine as Phone, RiMailLine as Mail, RiTimeLine as Clock, RiInstagramLine as Instagram, RiFacebookLine as Facebook } from "react-icons/ri";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,18 +22,18 @@ export default function Footer() {
             <div className="relative h-12 w-40 mb-4">
               <Image
                 src="/logo-full.jpg"
-                alt="Ahsan & Sons Jewellers"
+                alt="Jewellers Shop"
                 fill
                 className="object-contain"
               />
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-4">
-              Karachi's finest jewellery house, crafting timeless elegance since generations. 
+              Your trusted jewellers shop, crafting timeless elegance since generations.
               We specialize in exquisite gold and diamond jewellery.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.instagram.com/ahsan_sons_jewellers/?hl=en"
+                href="https://www.instagram.com/jewellersshop"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-gold transition-colors"
@@ -42,7 +42,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://www.facebook.com/ahsanjewellers/"
+                href="https://www.facebook.com/jewellersshop"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-gold transition-colors"
@@ -90,21 +90,21 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-gold mb-4">Contact Info</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 text-gold mt-1 flex-shrink-0" />
+                <MapPin className="w-4 h-4 text-gold mt-1 shrink-0" />
                 <span className="text-white/70 text-sm">
-                  Shop # 57 & 58, Hyderi Centre, Block G, North Nazimabad, Karachi
+                  123 Main Street, Downtown City, State 12345
                 </span>
               </li>
               <li className="flex items-start space-x-3">
-                <Phone className="w-4 h-4 text-gold mt-1 flex-shrink-0" />
-                <a href="tel:+923212034077" className="text-white/70 hover:text-gold transition-colors text-sm">
-                  +92 321 2034077
+                <Phone className="w-4 h-4 text-gold mt-1 shrink-0" />
+                <a href="tel:+15551234567" className="text-white/70 hover:text-gold transition-colors text-sm">
+                  +1 (555) 123-4567
                 </a>
               </li>
               <li className="flex items-start space-x-3">
-                <Mail className="w-4 h-4 text-gold mt-1 flex-shrink-0" />
-                <a href="mailto:har916@hotmail.com" className="text-white/70 hover:text-gold transition-colors text-sm">
-                  har916@hotmail.com
+                <Mail className="w-4 h-4 text-gold mt-1 shrink-0" />
+                <a href="mailto:info@jewellersshop.com" className="text-white/70 hover:text-gold transition-colors text-sm">
+                  info@jewellersshop.com
                 </a>
               </li>
             </ul>
@@ -120,7 +120,7 @@ export default function Footer() {
           className="border-t border-gold/20 mt-12 pt-8 text-center"
         >
           <p className="text-white/60 text-sm">
-            © {currentYear} Ahsan & Sons Jewellers. All rights reserved.
+            © {currentYear} Jewellers Shop. All rights reserved.
           </p>
         </motion.div>
       </div>
