@@ -31,17 +31,17 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["123 Main Street", "Downtown City, State 12345"],
+      details: ["Ground floor, Shandar Mobile Mall", "Barakahu, Islamabad, 45400"],
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      details: ["0300 1730313"],
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@jewellersshop.com"],
+      details: ["info@sunnyjewellers.pk"],
     },
     {
       icon: Clock,
@@ -128,8 +128,8 @@ export default function ContactPage() {
           >
             <div className="relative w-full aspect-[1.75/1] rounded-xl overflow-hidden shadow-2xl border-4 border-gold/30 hover:border-gold/50 transition-all duration-300 hover:shadow-gold/20">
               <Image
-                src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=800&h=600&fit=crop"
-                alt="Jewellers Shop Business Card"
+                src="/showroom.webp"
+                alt="Sunny Jewellers Showroom"
                 fill
                 className="object-cover"
                 priority
@@ -241,7 +241,7 @@ export default function ContactPage() {
             >
               <div className="bg-luxury-black rounded-lg overflow-hidden shadow-xl h-full">
                 <iframe
-                  src="https://maps.google.com/maps?q=40.7128,-74.0060&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=33.7393271,73.1795657&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -249,7 +249,7 @@ export default function ContactPage() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="w-full h-full"
-                  title="Jewellers Shop Location"
+                  title="Sunny Jewellers Location"
                 />
               </div>
             </motion.div>
@@ -275,14 +275,14 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="tel:+15551234567"
+                href="tel:03001730313"
                 className="inline-flex items-center gap-2 bg-luxury-black hover:bg-luxury-black/90 text-gold px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg"
               >
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
               <a
-                href="https://wa.me/15551234567"
+                href="https://wa.me/03001730313"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-luxury-black hover:bg-luxury-black/90 text-gold px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg"
@@ -298,7 +298,7 @@ export default function ContactPage() {
       {/* Floating Action Buttons */}
       <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
         <motion.a
-          href="https://wa.me/15551234567"
+          href="https://wa.me/03001730313"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ scale: 0 }}
@@ -316,7 +316,7 @@ export default function ContactPage() {
         </motion.a>
 
         <motion.a
-          href="tel:+15551234567"
+          href="tel:03001730313"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 1.2, type: "spring", stiffness: 260, damping: 20 }}

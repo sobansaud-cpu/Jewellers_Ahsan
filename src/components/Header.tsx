@@ -11,6 +11,7 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
+    { href: "/gallery", label: "Gallery" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
@@ -25,9 +26,14 @@ export default function Header() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-2xl font-bold text-gold"
             >
-              Jewellers
+              <Image
+                src="/sunny.jpg"
+                alt="Sunny Jewellers"
+                width={180}
+                height={80}
+                className="object-contain w-36 h-14 md:w-28 md:h-11"
+              />
             </motion.div>
           </Link>
 
@@ -59,14 +65,14 @@ export default function Header() {
               className="hidden md:flex items-center space-x-3"
             >
               <a
-                href="tel:+15551234567"
+                href="tel:03001730313"
                 className="text-white/80 hover:text-gold transition-colors"
                 aria-label="Phone"
               >
                 <Phone className="w-5 h-5" />
               </a>
               <a
-                href="https://www.instagram.com/jewellersshop"
+                href="https://www.instagram.com/sunnyjewellers.pk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/80 hover:text-gold transition-colors"
@@ -75,7 +81,7 @@ export default function Header() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://www.facebook.com/jewellersshop"
+                href="https://www.facebook.com/sunnyjewellers.pk/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/80 hover:text-gold transition-colors"
@@ -119,14 +125,14 @@ export default function Header() {
                 ))}
                 <div className="flex items-center space-x-4 pt-4 border-t border-gold/20">
                   <a
-                    href="tel:+15551234567"
+                    href="tel:03001730313"
                     className="text-white/80 hover:text-gold transition-colors"
                     aria-label="Phone"
                   >
                     <Phone className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://www.instagram.com/jewellersshop"
+                    href="https://www.instagram.com/sunnyjewellers.pk"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-gold transition-colors"
@@ -135,7 +141,7 @@ export default function Header() {
                     <Instagram className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://www.facebook.com/jewellersshop"
+                    href="https://www.facebook.com/sunnyjewellers.pk/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/80 hover:text-gold transition-colors"

@@ -145,6 +145,7 @@
   
   .text-gold {
     color: var(--gold);
+    text-shadow: 0 0 15px var(--gold);
   }
   
   .bg-gold {

@@ -65,7 +65,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1920&h=1080&fit=crop"
-            alt="About Ahsan & Sons"
+            alt="About Sunny Jewellers"
             fill
             className="object-cover opacity-30"
             priority
@@ -105,7 +105,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Jewellers Shop was founded in the 1950s by our grandfather,
+                  Sunny Jewellers was founded in the 1950s by our grandfather,
                   who had a vision to bring exquisite gold and diamond jewellery to
                   the people of our community. What started as a small workshop has grown
                   into one of the most trusted jewellery shops in the area.
@@ -326,7 +326,7 @@ export default function AboutPage() {
               Become Part of Our Story
             </h2>
             <p className="text-lg text-luxury-black/80 mb-8 max-w-2xl mx-auto">
-              We invite you to experience the legacy of Jewellers Shop.
+              We invite you to experience the legacy of Sunny Jewellers.
               Visit us today and let us help you find or create the perfect piece.
             </p>
             <a

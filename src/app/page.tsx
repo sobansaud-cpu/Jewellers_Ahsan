@@ -82,7 +82,7 @@ export default function Home() {
             className="object-cover opacity-40"
             priority
           />
-          <div className="absolute inset-0 bg-linear-to-b from-luxury-black/60 via-luxury-black/40 to-luxury-black" />
+          <div className="absolute inset-0 bg-linear-to-b from-luxury-black/60 via-gold/10 to-luxury-black" />
         </div>
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
@@ -93,9 +93,9 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-6xl sm:text-7xl md:text-8xl font-bold mb-8"
           >
-            <span className="text-white">Timeless</span>
+            <span className="text-white">Sunny</span>
             <br />
-            <span className="text-gold font-decorative">Elegance</span>
+            <span className="text-gold font-decorative">Jewellers</span>
           </motion.h1>
 
           <motion.p
@@ -204,7 +204,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-luxury-black mb-4">
-              Why Choose <span className="text-gold">Ahsan & Sons</span>
+              Why Choose <span className="text-gold">Sunny Jewellers</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Excellence, trust, and craftsmanship in every piece
